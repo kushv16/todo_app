@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header
+{
+    font-size:2em;
+    color:white;
+}
+
+body{
+    background-image:linear-gradient(120deg,#ed7eeb,#b160f7);
+    font-family: 'Poppins', sans-serif;
+}
+
+header,form
+{
+    display:flex;
+    min-height:20vh;
+    justify-content:center;
+    align-items:center;
+}
+
+form
+{
+    border:none;
+    outline:none;
+    padding:10
+}
+
+form input,form button
+{
+   padding:0.5rem;
+   font-size:2rem;
+    border:none;
+    outline:none;
+}
+
+form button
+{
+    color: #b160f7;
+    background:white;
+    
+}
+
+form button:hover
+{
+    color:white;
+    background:#b160f7;
+}
+
+.todo-container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.todo-list
+{
+    list-style: none;
+    min-width:30%;
+}
+
+.filter-todo {
+    padding: 1rem;
+  }
+
+.list-container{
+    display:flex;
+    background:white;
+    color:black;
+    justify-content:space-between;
+    margin:0.5rem;
+    font-size: 1.5rem;
+    align-items:center;
+    transition: all 0.5s ease;
+}
+
+.list-container li{
+    flex: 1;
+}
+
+
+.list-item {
+    padding: 0rem 0.5rem;
+}
+.complete-btn,.trash-btn
+{   
+    font-size:1.5rem;
+    color:white;
+    background: #b160f7;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
+
+.complete-btn{
+    background:rgb(53, 228, 53)
+}
+
+.fa-trash,.fa-check
+{
+    pointer-events: none;
+}
+
+.completed
+{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+
+.fall
+{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #b160f7;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background:  #b160f7;
+    cursor: pointer;
+    pointer-events: none;
+  }
